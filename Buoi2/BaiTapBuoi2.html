@@ -5,14 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 30px;
+        }
+
+        .header h4 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            size: 30px;
+        }
+
+        .solieu .row .col {
+            display: inline-block;
+            width: 100px;
+            color: #F26464;
+        }
+
+        .solieu .row .col span{
+            display: block;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .solieu .row .col p{
+            display: block;
+            color: #373737;
+        }
+
+        .heading {
+            display: inline-block;
+            font-weight: 700;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 16px;
+            border-bottom: 3px solid #F26464;
+            padding-bottom: 7px;
+            margin-bottom: 23px;
+        }
+
+        .content {
+            display: block;
+            color: #373737;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+
+        .button button {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #F26464;
+            padding: 17px 30px;
+            border: 2px solid #F26464;
+            border-radius: 60px;
+            margin-left: 150px;
+        }
+
+        .buttons {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #F26464;
+            padding: 17px 30px;
+            border: 2px solid #F26464;
+            border-radius: 60px;
+        }
+
+        .danger {
+            border-color: #f44336;
+            color: red
+        }
+        .danger:hover {
+            background: #f44336;
+            color: white;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 11px;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            color: #373737;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #FFF;
+            border: 1px solid #D7D7D7;
+            border-radius: 27px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        span.ds-year {
+            display: block;
+            color: #373737;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        span.title {
+            color: #373737;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
+    <img src="img_luc.jpg" alt="" height="700px">
     <div class="header">
         <h4>hi there</h4>
         <h1>I'm Jacon Stroff <br> UI/UX DESIGNER + DEVELOPER <br> based in Florida</h1>
     </div>
-    
+     
     <div class="solieu">
         <div class="row">
             <div class="col">
@@ -32,12 +162,53 @@
         </div>
     </div>
 
-    <div class="aboutme">
-        <h3>About Me</h3>
+    <div>
+        <h3 class="heading">About Me</h3>
     </div>
 
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+    <div>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+    </div>
+
+    <div class="button">
+        <button class="btn danger header">DOWNLOAD RESUME</button>
+    </div>
+
+    <div>
+        <h3 class="heading">CORE SKILLS</h3>
+        <ul class="skills-list">
+            <li>Storyblok</li>
+            <li>PWAs</li>
+            <li>Responsive Web Design</li>
+            <li>React</li>
+            <li>Vuetify</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="heading">OTHER SKILLS</h3>
+        <ul class="skills-list">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>Vue.js</li>
+            <li>React</li>
+            <li>Sequelize</li>
+            <li>Github</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="heading">WORK EXPERIENCE</h3>
+        <span class="ds-year">2019 - Present</span>
+        <h4 class="name">Matrix Media Inc</h4>
+        <span class="title">Full Stack developer</span>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+        <ul class="content">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
     </div>
 </body>
 </html>
